@@ -5,7 +5,10 @@ def add(a, b):
 def add_tax(amount, tax_rate):
     return amount + (amount * tax_rate / 100)
 
+def apply_discount(amount, discount):
+    return amount - (amount * discount / 100)
 
 if __name__ == "__main__":
     print("Sum:", add(10, 5))
     print("With tax:", add_tax(100, 15))
+    print("After discount:", apply_discount(100, 10))
